@@ -58,12 +58,17 @@
                 new BABYLON.Vector3(0, 0, 0), 
                 scene
             );
-            camera.collisionRadius = new BABYLON.Vector3(0.1, 0.1, 0.1);
-            camera.minZ = .001;
-            camera.maxZ = 1;
+            
+            camera.minZ = .01;
+            camera.maxZ = 10;
+            camera.lowerRadiusLimit = .01;
+            camera.upperRadiusLimit = 10;
+            camera.wheelPrecision = 200;
+
             var light = new BABYLON.HemisphericLight("light1", new BABYLON.Vector3(0, 1, 0), scene);
             return scene;
         };
+        
         var createScene = function (scene) {
             BABYLON.SceneLoader.ImportMesh(
                 undefined, 

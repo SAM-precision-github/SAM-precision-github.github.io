@@ -88,6 +88,30 @@
             return scene;
         };
 
+        var advancedTexture = BABYLON.GUI.AdvancedDynamicTexture.CreateFullscreenUI("UI");
+
+        var panel = new BABYLON.GUI.StackPanel();
+        panel.width = "200px";
+        panel.isVertical = false;
+        panel.horizontalAlignment = BABYLON.GUI.Control.HORIZONTAL_ALIGNMENT_RIGHT;
+        panel.verticalAlignment = BABYLON.GUI.Control.VERTICAL_ALIGNMENT_CENTER;
+        advancedTexture.addControl(panel);
+
+        var checkbox = new BABYLON.GUI.Checkbox();
+        checkbox.width = "20px";
+        checkbox.height = "20px";
+        checkbox.isChecked = true;
+        checkbox.color = "green";
+        checkbox.onIsCheckedChangedObservable.add(function(value) {
+            if (value == false){
+                checkbox.width = "40px"
+            }
+            else{
+                checkbox.width = "20px"
+            }
+        });
+        panel.addControl(checkbox); 
+
         engine = createDefaultEngine();
         if (!engine) throw 'engine should not be null.';
         scene = createDefaultScene();
@@ -106,13 +130,5 @@
             engine.resize();
         });
     </script>
-
-    <div id="checkboxes">
-        <label><input type="checkbox" id="checkbox1" class="overlay-checkbox" value="Value 1"> Checkbox 1</label><br>
-        <label><input type="checkbox" id="checkbox2" class="overlay-checkbox" value="Value 2"> Checkbox 2</label><br>
-        <label><input type="checkbox" id="checkbox3" class="overlay-checkbox" value="Value 3"> Checkbox 3</label><br>
-    </div>
-
-    <script src="checkbox_manager.js"></script> 
 </body>
 </html>

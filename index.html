@@ -58,6 +58,7 @@
                 new BABYLON.Vector3(0, 0, 0), 
                 scene
             );
+            camera.collisionRadius = new BABYLON.Vector3(0.1, 0.1, 0.1);
             var light = new BABYLON.HemisphericLight("light1", new BABYLON.Vector3(0, 1, 0), scene);
             return scene;
         };

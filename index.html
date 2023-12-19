@@ -37,8 +37,15 @@
                 touch-action: none;
             }
         </style>
+
+        <div id="checkboxes">
+            <label><input type="checkbox" id="checkbox1" class="overlay-checkbox" value="Value 1"> Checkbox 1</label><br>
+            <label><input type="checkbox" id="checkbox2" class="overlay-checkbox" value="Value 2"> Checkbox 2</label><br>
+            <label><input type="checkbox" id="checkbox3" class="overlay-checkbox" value="Value 3"> Checkbox 3</label><br>
+        </div>
     </head>
 <body>
+    <script src="checkbox_manager.js"></script> 
     <canvas id="renderCanvas"></canvas>
     <script>
         var canvas = document.getElementById("renderCanvas");

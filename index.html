@@ -97,54 +97,54 @@
         sceneToRender = scene
 
         // Add GUI here
-        var sphere = BABYLON.MeshBuilder.CreateSphere("sphere", {}, scene);
+        // var sphere = BABYLON.MeshBuilder.CreateSphere("sphere", {}, scene);
 
-        var unitVec = new BABYLON.Vector3(1, 1, 1);
-        sphere.scaling = unitVec.scale(5);
+        // var unitVec = new BABYLON.Vector3(1, 1, 1);
+        // sphere.scaling = unitVec.scale(5);
 
-        var advancedTexture = BABYLON.GUI.AdvancedDynamicTexture.CreateFullscreenUI("UI", true, scene);
+        // var advancedTexture = BABYLON.GUI.AdvancedDynamicTexture.CreateFullscreenUI("UI", true, scene);
         
-        var panel = new BABYLON.GUI.StackPanel();
-        panel.width = "300px";
-        panel.isVertical = true;
-        panel.paddingLeft = "20px";
-        panel.horizontalAlignment = BABYLON.GUI.Control.HORIZONTAL_ALIGNMENT_LEFT;
-        panel.verticalAlignment = BABYLON.GUI.Control.VERTICAL_ALIGNMENT_CENTER;
-        panel.fontSize = 16;
-        advancedTexture.addControl(panel);
+        // var panel = new BABYLON.GUI.StackPanel();
+        // panel.width = "300px";
+        // panel.isVertical = true;
+        // panel.paddingLeft = "20px";
+        // panel.horizontalAlignment = BABYLON.GUI.Control.HORIZONTAL_ALIGNMENT_LEFT;
+        // panel.verticalAlignment = BABYLON.GUI.Control.VERTICAL_ALIGNMENT_CENTER;
+        // panel.fontSize = 16;
+        // advancedTexture.addControl(panel);
 
-        var addCheckbox = function(text, property, left, panel) {
-            var checkbox = new BABYLON.GUI.Checkbox();
-            checkbox.width = "20px";
-            checkbox.height = "20px";
-            checkbox.color = "green";
-            // checkbox.onSync = function() {
-            //     checkbox.isChecked = particleSystem[property];
-            // }
-            // checkbox.onSync();
-            checkbox.onIsCheckedChangedObservable.add(function(value) {
-                if (value){
-                    sphere.scaling = unitVec.scale(slider.value);
-                }else{
-                    sphere.scaling = unitVec.scale(0);
-                }
-            });
+        // var addCheckbox = function(text, property, left, panel) {
+        //     var checkbox = new BABYLON.GUI.Checkbox();
+        //     checkbox.width = "20px";
+        //     checkbox.height = "20px";
+        //     checkbox.color = "green";
+        //     // checkbox.onSync = function() {
+        //     //     checkbox.isChecked = particleSystem[property];
+        //     // }
+        //     // checkbox.onSync();
+        //     checkbox.onIsCheckedChangedObservable.add(function(value) {
+        //         if (value){
+        //             sphere.scaling = unitVec.scale(slider.value);
+        //         }else{
+        //             sphere.scaling = unitVec.scale(0);
+        //         }
+        //     });
 
-            var header = BABYLON.GUI.Control.AddHeader(checkbox, text, "180px", { isHorizontal: true, controlFirst: true});
-            header.height = "30px";
-            header.horizontalAlignment = BABYLON.GUI.Control.HORIZONTAL_ALIGNMENT_LEFT;
+        //     var header = BABYLON.GUI.Control.AddHeader(checkbox, text, "180px", { isHorizontal: true, controlFirst: true});
+        //     header.height = "30px";
+        //     header.horizontalAlignment = BABYLON.GUI.Control.HORIZONTAL_ALIGNMENT_LEFT;
 
-            if (left) {
-                header.left = left;
-            }
+        //     if (left) {
+        //         header.left = left;
+        //     }
 
-            panel.addControl(header);  
-        }
+        //     panel.addControl(header);  
+        // }
 
-        advancedTexture.addControl(slider);
+        // advancedTexture.addControl(slider);
 
-        addCheckbox("visible", "scale", "40px", panel);  
-        addCheckbox("visible2", "scale", "40px", panel);
+        // addCheckbox("visible", "scale", "40px", panel);  
+        // addCheckbox("visible2", "scale", "40px", panel);
 
         // Start rendering the scene based on the engine render loop.
         engine.runRenderLoop(function () {

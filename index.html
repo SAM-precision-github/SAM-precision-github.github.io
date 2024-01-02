@@ -88,30 +88,44 @@
             return scene;
         };
 
-        // // https://grideasy.github.io/overviews/Gui
-        // var advancedTexture = BABYLON.GUI.AdvancedDynamicTexture.CreateFullscreenUI("UI");
+        var panel = new BABYLON.GUI.StackPanel();
+        panel.width = "300px";
+        panel.isVertical = true;
+        panel.paddingLeft = "20px";
+        panel.horizontalAlignment = BABYLON.GUI.Control.HORIZONTAL_ALIGNMENT_LEFT;
+        panel.verticalAlignment = BABYLON.GUI.Control.VERTICAL_ALIGNMENT_CENTER;
+        panel.fontSize = 16;
+        advancedTexture.addControl(panel);
 
-        // var panel = new BABYLON.GUI.StackPanel();
-        // panel.width = "200px";
-        // panel.isVertical = false;
-        // panel.horizontalAlignment = BABYLON.GUI.Control.HORIZONTAL_ALIGNMENT_RIGHT;
-        // panel.verticalAlignment = BABYLON.GUI.Control.VERTICAL_ALIGNMENT_CENTER;
-        // advancedTexture.addControl(panel);
+        var addCheckbox = function(text, property, left, panel) {
+            var checkbox = new BABYLON.GUI.Checkbox();
+            checkbox.width = "20px";
+            checkbox.height = "20px";
+            checkbox.color = "green";
+            
+            checkbox.onIsCheckedChangedObservable.add(function(value) {
+                if (value){
+                    sphere.scaling = unitVec.scale(slider.value);
+                }else{
+                    sphere.scaling = unitVec.scale(0);
+                }
+            });
 
-        // var checkbox = new BABYLON.GUI.Checkbox();
-        // checkbox.width = "20px";
-        // checkbox.height = "20px";
-        // checkbox.isChecked = true;
-        // checkbox.color = "green";
-        // checkbox.onIsCheckedChangedObservable.add(function(value) {
-        //     if (value == false){
-        //         checkbox.width = "40px"
-        //     }
-        //     else{
-        //         checkbox.width = "20px"
-        //     }
-        // });
-        // panel.addControl(checkbox); 
+            var header = BABYLON.GUI.Control.AddHeader(checkbox, text, "180px", { isHorizontal: true, controlFirst: true});
+            header.height = "30px";
+            header.horizontalAlignment = BABYLON.GUI.Control.HORIZONTAL_ALIGNMENT_LEFT;
+
+            if (left) {
+                header.left = left;
+            }
+
+            panel.addControl(header);  
+        }
+
+        advancedTexture.addControl(slider);
+
+        addCheckbox("visible", "scale", "40px", panel);  
+        addCheckbox("visible2", "scale", "40px", panel);
 
         engine = createDefaultEngine();
         if (!engine) throw 'engine should not be null.';

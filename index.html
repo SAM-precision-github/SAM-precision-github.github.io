@@ -64,6 +64,8 @@
             camera.lowerRadiusLimit = .01;
             camera.upperRadiusLimit = 10;
             camera.wheelPrecision = 200;
+            camera.panningSensibility = 0.01;
+            camera.pinchDeltaPercentage=0.003;
 
             var light = new BABYLON.HemisphericLight("light1", new BABYLON.Vector3(0, 1, 0), scene);
             return scene;

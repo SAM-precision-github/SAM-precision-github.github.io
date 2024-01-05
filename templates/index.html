@@ -94,7 +94,8 @@
             checkbox.width = "20px";
             checkbox.height = "20px";
             checkbox.color = "green";
-            checkbox.isChecked = true;
+            checkbox.isChecked = false;
+            node[property] = val2; //false set at start
 
             checkbox.onIsCheckedChangedObservable.add(function(value) {
                 if (value){
@@ -112,11 +113,13 @@
                 header.left = left;
             }
 
-            panel.addControl(header);  
+            panel.addControl(header); 
+            
+            return checkbox
         }
 
         // Add model and all checkboxes
-        var nodes;
+        var nodes, tols;
         BABYLON.SceneLoader.ImportMesh(
             undefined, 
             "", 
@@ -130,6 +133,8 @@
             }
         );
 
+        var point_positions;
+        var point_lines;
         setTimeout(function() {
             // After model did load (1000ms timeout safe)
 
@@ -139,24 +144,55 @@
             // nodes[2]    : tols root node
             part = nodes[0]
             axes = nodes[1]
-            tols = nodes[2]
+            tols = nodes[2].getChildren()
 
             // checkbox presets
             var hidden = unitVec.scale(0)
             var visible = unitVec.scale(1)
 
-            addCheckbox(part.id, part, "scaling", visible, hidden, "40px", panel);
-            addCheckbox(axes.id, axes, "scaling", visible, hidden, "40px", panel);
+            part_cb = addCheckbox(part.id, part, "scaling", visible, hidden, "40px", panel);
+            part_cb.isChecked = true;
+            axes_cb = addCheckbox(axes.id, axes, "scaling", visible, hidden, "40px", panel);
+            axes_cb.isChecked = true;
             
             // Measurement points
-            tols.getChildren().forEach(element => {
-                addCheckbox(element.name, element, "scaling", visible, hidden, "40px", panel);
-            });
-            // tols.getChildren().slice(27, 30).forEach(element => {
-            //     element.scaling = visible
-            //     addCheckbox(element.id, element, "scaling", visible, hidden, "40px", panel);
-            // });
+            point_positions = new Array(tols.length)
+            point_lines = new Array(tols.length)
+            tols.forEach((tol,tol_id) => {
+                addCheckbox(tol.name, tol, "scaling", visible, hidden, "40px", panel);
+                
+                elems = tol.getChildren()
+                point_positions[tol_id] = new Array(elems.length)
+                point_lines[tol_id] = new Array(elems.length)
+                
+                elems.forEach((elem,elem_id) => {
+                var toldev = tol.metadata.gltf.extras['deviation']
 
+                    points = elem.getChildren()
+                    point_positions[tol_id][elem_id] = new Array(points.length)
+                    point_lines[tol_id][elem_id] = new Array(points.length)
+
+                    points.forEach((point, point_id) => {
+                        
+                        point_positions[tol_id][elem_id][point_id] = point.position
+                        
+                        // draw line
+                        const line_coordinates = {
+                            points: [
+                                point.position,
+                                point.position,
+                            ], //vec3 array,
+                            updatable: true,
+                        };
+                        
+                        let line_obj = BABYLON.MeshBuilder.CreateLines("lines", line_coordinates, scene); //scene is optional and defaults to the current scene
+                        
+                        point_lines[tol_id][elem_id][point_id] = line_coordinates
+                        line_coordinates.line = line_obj
+                        
+                    });
+                });
+            });
             // Rotation
 
         }, 1000); // Max timeout for model loading for node tree fetch
@@ -169,21 +205,56 @@
         slider.width = "150px";
         slider.color = "#003399";
         slider.background = "grey";
-        slider.left = "120px";
-        slider.top = "120px";
+        slider.left = "200px";
+        slider.top = "20px";
         slider.horizontalAlignment = BABYLON.GUI.Control.HORIZONTAL_ALIGNMENT_LEFT;
-        slider.verticalAlignment = BABYLON.GUI.Control.VERTICAL_ALIGNMENT_CENTER;
+        slider.verticalAlignment = BABYLON.GUI.Control.VERTICAL_ALIGNMENT_TOP;
         slider.onValueChangedObservable.add(function (value) {
-            tols.getChildren().forEach(tol => {
-                tol.getChildren().forEach(element => {
-                    element.getChildren().forEach(point => {
+            tols.forEach(tol => {
+                elems = tol.getChildren()
+                elems.forEach(elem => {
+                    points = elem.getChildren()
+                    points.forEach(point => {
                         point.scaling = unitVec.scale(value);
                     });
                 });
             });
         });
-
         advancedTexture.addControl(slider);
+        
+        var slider_deviation = new BABYLON.GUI.Slider();
+        slider_deviation.minimum = 0;
+        slider_deviation.maximum = 10;
+        slider_deviation.value = 0;
+        slider_deviation.height = "20px";
+        slider_deviation.width = "150px";
+        slider_deviation.color = "#003399";
+        slider_deviation.background = "grey";
+        slider_deviation.left = "200px";
+        slider_deviation.top = "50px";
+        slider_deviation.horizontalAlignment = BABYLON.GUI.Control.HORIZONTAL_ALIGNMENT_LEFT;
+        slider_deviation.verticalAlignment = BABYLON.GUI.Control.VERTICAL_ALIGNMENT_TOP;
+        slider_deviation.onValueChangedObservable.add(function (value) {
+            tols.forEach((tol,tol_id) => {
+                elems = tol.getChildren()
+                elems.forEach((elem,elem_id) => {
+                    points = elem.getChildren()
+                    points.forEach((point,index) => {
+                        new_position = new BABYLON.Vector3(
+                            point_positions[tol_id][elem_id][index].x,
+                            point_positions[tol_id][elem_id][index].y+value*point.metadata.gltf.extras['deviation'],
+                            point_positions[tol_id][elem_id][index].z
+                        )
+                        point_lines[tol_id][elem_id][index].points[1] = new_position
+                        line = BABYLON.MeshBuilder.CreateLines("lines", point_lines[tol_id][elem_id][index])
+
+                        point.position = new_position
+                    });
+                });
+            });
+        });
+
+        advancedTexture.addControl(slider_deviation);
 
         // Start rendering the scene based on the engine render loop.
         engine.runRenderLoop(function () {

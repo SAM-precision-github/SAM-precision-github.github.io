@@ -116,49 +116,55 @@
         }
 
         // Add model and all checkboxes
-        var AddModelToScene = function (scene) {
-            BABYLON.SceneLoader.ImportMesh(
-                undefined, 
-                "", 
-                "31230002_rev2.gltf", 
-                scene, 
-                function (meshes) {
-                    scene.createDefaultCameraOrLight(true);
-                    scene.activeCamera.attachControl(canvas, false);
+        var nodes;
+        BABYLON.SceneLoader.ImportMesh(
+            undefined, 
+            "", 
+            "92320022_cad.gltf", 
+            scene, 
+            function (meshes) {
+                scene.createDefaultCameraOrLight(true);
+                scene.activeCamera.attachControl(canvas, false);
 
-                    var nodes = meshes[0].getChildren()
-                    // nodes[0]    : CAD model
-                    // nodes[1]    : axes
-                    // nodes[2]    : root node for measurement points
-                    part = nodes[0]
-                    axes = nodes[1]
-                    root = nodes[2]
+                nodes = meshes[0].getChildren()
+            }
+        );
 
-                    // checkbox presets
-                    var hidden = unitVec.scale(0)
-                    var visible = unitVec.scale(1)
+        setTimeout(function() {
+            // After model did load (1000ms timeout safe)
 
-                    addCheckbox(part.id, part, "scaling", visible, hidden, "40px", panel);
-                    addCheckbox(axes.id, axes, "scaling", visible, hidden, "40px", panel);
-                    
-                    // Measurement points
-                    nodes[2].getChildren().forEach(element => {
-                        element.scaling = unitVec.scale(0)
-                    });
-                    nodes[2].getChildren().slice(27, 30).forEach(element => {
-                        element.scaling = unitVec.scale(1)
-                        addCheckbox(element.id, element, "scaling", visible, hidden, "40px", panel);
-                    });
-                }
-            );
-            return scene;
-        };
-        scene = AddModelToScene(scene);
+            // Use "nodes" defined in sceneloader
+            // nodes[0]    : CAD model
+            // nodes[1]    : axes
+            // nodes[2]    : tols root node
+            part = nodes[0]
+            axes = nodes[1]
+            tols = nodes[2]
+
+            // checkbox presets
+            var hidden = unitVec.scale(0)
+            var visible = unitVec.scale(1)
+
+            addCheckbox(part.id, part, "scaling", visible, hidden, "40px", panel);
+            addCheckbox(axes.id, axes, "scaling", visible, hidden, "40px", panel);
+            
+            // Measurement points
+            tols.getChildren().forEach(element => {
+                addCheckbox(element.name, element, "scaling", visible, hidden, "40px", panel);
+            });
+            // tols.getChildren().slice(27, 30).forEach(element => {
+            //     element.scaling = visible
+            //     addCheckbox(element.id, element, "scaling", visible, hidden, "40px", panel);
+            // });
+
+            // Rotation
+
+        }, 1000); // Max timeout for model loading for node tree fetch
 
         var slider = new BABYLON.GUI.Slider();
-        slider.minimum = 0.01;
-        slider.maximum = 0.1;
-        slider.value = .01;
+        slider.minimum = .5;
+        slider.maximum = 2;
+        slider.value = 1;
         slider.height = "20px";
         slider.width = "150px";
         slider.color = "#003399";
@@ -168,14 +174,16 @@
         slider.horizontalAlignment = BABYLON.GUI.Control.HORIZONTAL_ALIGNMENT_LEFT;
         slider.verticalAlignment = BABYLON.GUI.Control.VERTICAL_ALIGNMENT_CENTER;
         slider.onValueChangedObservable.add(function (value) {
-            sphere.scaling = unitVec.scale(value);
+            tols.getChildren().forEach(tol => {
+                tol.getChildren().forEach(element => {
+                    element.getChildren().forEach(point => {
+                        point.scaling = unitVec.scale(value);
+                    });
+                });
+            });
         });
 
         advancedTexture.addControl(slider);
-
-        let env = scene.meshes[1];
-        let allMeshes = env;
-        console.log(allMeshes)
 
         // Start rendering the scene based on the engine render loop.
         engine.runRenderLoop(function () {
@@ -188,6 +196,89 @@
         window.addEventListener("resize", function () {
             engine.resize();
         });
+
+        class MenuOptions
+        {
+            constructor(advancedTexture, options = {})
+            {
+                let width = (options.width || 180)+"px";
+                this.height = (options.height || 40)+"px";
+                this.color = options.color || "black";
+                this.background = options.background || "white";
+
+                this.advancedTexture = advancedTexture;
+
+                // Container
+                this.container = new BABYLON.GUI.Container();
+                this.container.width = width;
+                this.container.verticalAlignment = options.align || BABYLON.GUI.Control.VERTICAL_ALIGNMENT_TOP;
+                this.container.horizontalAlignment = options.valign || BABYLON.GUI.Control.HORIZONTAL_ALIGNMENT_LEFT;
+                this.container.isHitTestVisible = false;
+
+                // Primary button
+                this.button = BABYLON.GUI.Button.CreateSimpleButton(null, "Please Select");
+                this.button.height = this.height;
+                this.button.background = this.background;
+                this.button.color = this.color;
+                this.button.verticalAlignment = BABYLON.GUI.Control.VERTICAL_ALIGNMENT_TOP;
+
+                // Options panel
+                this.options = new BABYLON.GUI.StackPanel();
+                this.options.verticalAlignment = BABYLON.GUI.Control.VERTICAL_ALIGNMENT_TOP;
+                this.options.top = this.height;		
+                this.options.isVisible = false;
+                this.options.isVertical = true;
+
+            this.button.onPointerUpObservable.add(() => {
+                    this.options.isVisible = !this.options.isVisible;
+                });
+
+                this.container.onPointerEnterObservable.add(() =>{
+                    this.container.zIndex = 555; //some big value
+                });
+
+                this.container.onPointerOutObservable.add(() =>{
+                    this.container.zIndex = 0; //back to original
+                    this.options.isVisible = false;
+                });
+
+                // add controls
+                this.advancedTexture.addControl(this.container);
+                this.container.addControl(this.button);
+                this.container.addControl(this.options);
+            }
+
+            get top() {
+                return this.container.top;
+            }
+
+            set top(value) {
+            this.container.top = value;
+            }
+
+            get left() {
+                return this.container.left;
+            }
+
+            set left(value) {
+            this.container.left = value;
+            }
+
+            addOption(text, callback)
+            {
+                var button = BABYLON.GUI.Button.CreateSimpleButton(null, text);
+                button.height = this.height;
+                button.paddingTop = "-1px";
+                button.background = this.background;
+                button.color = this.color;
+                button.alpha = 1.0;
+                button.onPointerUpObservable.add(() => {
+                    this.options.isVisible = false;            
+                });        
+                button.onPointerClickObservable.add(callback); 
+                this.options.addControl(button);
+            }
+        }
     </script>
 </body>
 </html>

@@ -245,8 +245,8 @@
                             point_positions[tol_id][elem_id][index].y+value*point.metadata.gltf.extras['deviation'],
                             point_positions[tol_id][elem_id][index].z
                         )
-                        point_lines[tol_id][elem_id][index].points[1] = new_position
-                        line = BABYLON.MeshBuilder.CreateLines("lines", point_lines[tol_id][elem_id][index])
+                        // point_lines[tol_id][elem_id][index].points[1] = new_position
+                        // line = BABYLON.MeshBuilder.CreateLines("lines", point_lines[tol_id][elem_id][index])
 
                         point.position = new_position
                     });

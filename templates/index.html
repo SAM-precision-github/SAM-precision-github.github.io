@@ -3,7 +3,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-        <title>Babylon.js sample code</title>
+        <title>Meetresultaten</title>
 
         <!-- Babylon.js -->
         <script src="https://code.jquery.com/pep/0.4.2/pep.min.js"></script>
@@ -119,7 +119,7 @@
         }
 
         // Add model and all checkboxes
-        var nodes, tols;
+        var mymeshes, nodes, tols;
         BABYLON.SceneLoader.ImportMesh(
             undefined, 
             "", 
@@ -129,12 +129,14 @@
                 scene.createDefaultCameraOrLight(true);
                 scene.activeCamera.attachControl(canvas, false);
 
+                mymeshes = meshes;
                 nodes = meshes[0].getChildren()
             }
         );
 
         var point_positions;
         var point_lines;
+        var partmaterial
         setTimeout(function() {
             // After model did load (1000ms timeout safe)
 
@@ -145,6 +147,19 @@
             part = nodes[0]
             axes = nodes[1]
             tols = nodes[2].getChildren()
+
+            // set part material
+            partmaterial = new BABYLON.StandardMaterial('frontMaterial', scene);
+            partmaterial.diffuseColor = new BABYLON.Color3(1, 1, 1);
+            partmaterial.roughness = .3;
+            partmaterial.metalic = .9;
+            partmaterial.alpha = 1;
+
+            mymeshes.forEach(mesh => {
+                if (mesh.name.startsWith(part.id) && (mesh.material)){
+                    mesh.material = partmaterial;
+                }
+            })
 
             // checkbox presets
             var hidden = unitVec.scale(0)
@@ -255,6 +270,30 @@
         });
 
         advancedTexture.addControl(slider_deviation);
+
+        var slider_transparency = new BABYLON.GUI.Slider();
+        slider_transparency.minimum = .1;
+        slider_transparency.maximum = 1;
+        slider_transparency.value = 1;
+        slider_transparency.height = "20px";
+        slider_transparency.width = "150px";
+        slider_transparency.color = "#003399";
+        slider_transparency.background = "grey";
+        slider_transparency.left = "200px";
+        slider_transparency.top = "80px";
+        slider_transparency.horizontalAlignment = BABYLON.GUI.Control.HORIZONTAL_ALIGNMENT_LEFT;
+        slider_transparency.verticalAlignment = BABYLON.GUI.Control.VERTICAL_ALIGNMENT_TOP;
+        slider_transparency.onValueChangedObservable.add(function (value) {
+            partmaterial.alpha = value;
+
+            // mymeshes.forEach(mesh => {
+            //     if (mesh.name.startsWith(part.id) && (mesh.material)){
+            //         mesh.material = partmaterial;
+            //     }
+            // })
+        });
+
+        advancedTexture.addControl(slider_transparency);
 
         // Start rendering the scene based on the engine render loop.
         engine.runRenderLoop(function () {

@@ -21,6 +21,7 @@
         <script src="https://preview.babylonjs.com/loaders/babylonjs.loaders.js"></script>
         <script src="https://preview.babylonjs.com/serializers/babylonjs.serializers.min.js"></script>
         <script src="https://preview.babylonjs.com/gui/babylon.gui.min.js"></script>
+        <script src="https://d3js.org/d3.v4.min.js"></script>
 
         <style>
             html, body {
@@ -41,8 +42,13 @@
 <body>
     <canvas id="renderCanvas"></canvas>
     <script>
+        // var model = '31230002'
+        var model = '92320022'
         var canvas = document.getElementById("renderCanvas");
-
+        
+        var gui_width = .4;
+        var camera;
+        var camera_matrix;
         var engine = null;
         var scene = null;
         var sceneToRender = null;
@@ -50,12 +56,12 @@
         var createDefaultScene = function() {
             // Setup the scene
             var scene = new BABYLON.Scene(engine);
-            var camera = new BABYLON.ArcRotateCamera(
+            camera = new BABYLON.ArcRotateCamera(
                 "camera1", 
                 -(Math.PI / 2), 
                 Math.PI / 2, 
                 1,
-                new BABYLON.Vector3(0, 0, 0), 
+                new BABYLON.Vector3(0, 0, 0),
                 scene
             );
             
@@ -66,6 +72,8 @@
             camera.wheelPrecision = 200;
             camera.pinchPrecision = 700;
             camera.panningSensibility = 1000;
+            camera_matrix = BABYLON.Matrix.Translation(-gui_width/3*2,0,0);
+            camera.getProjectionMatrix().multiplyToRef(camera_matrix, camera.getProjectionMatrix());
 
             var light = new BABYLON.HemisphericLight("light1", new BABYLON.Vector3(0, 1, 0), scene);
             return scene;
@@ -74,56 +82,14 @@
         engine = createDefaultEngine();
         if (!engine) throw 'engine should not be null.';
         scene = createDefaultScene();
-
-        // Add GUI here
-        var unitVec = new BABYLON.Vector3(1, 1, 1);
-
         var advancedTexture = BABYLON.GUI.AdvancedDynamicTexture.CreateFullscreenUI("UI", true, scene);
-        
-        var panel = new BABYLON.GUI.StackPanel();
-        panel.width = "300px";
-        panel.isVertical = true;
-        panel.paddingLeft = "20px";
-        panel.horizontalAlignment = BABYLON.GUI.Control.HORIZONTAL_ALIGNMENT_LEFT;
-        panel.verticalAlignment = BABYLON.GUI.Control.VERTICAL_ALIGNMENT_CENTER;
-        panel.fontSize = 16;
-        advancedTexture.addControl(panel);
-
-        var addCheckbox = function(text, node, property, val1, val2 ,left, panel) {
-            var checkbox = new BABYLON.GUI.Checkbox();
-            checkbox.width = "20px";
-            checkbox.height = "20px";
-            checkbox.color = "green";
-            checkbox.isChecked = false;
-            node[property] = val2; //false set at start
-
-            checkbox.onIsCheckedChangedObservable.add(function(value) {
-                if (value){
-                    node[property] = val1;
-                }else{
-                    node[property] = val2;
-                }
-            });
-
-            var header = BABYLON.GUI.Control.AddHeader(checkbox, text, "180px", { isHorizontal: true, controlFirst: true});
-            header.height = "30px";
-            header.horizontalAlignment = BABYLON.GUI.Control.HORIZONTAL_ALIGNMENT_LEFT;
-
-            if (left) {
-                header.left = left;
-            }
-
-            panel.addControl(header); 
-            
-            return checkbox
-        }
 
         // Add model and all checkboxes
         var mymeshes, nodes, tols;
         BABYLON.SceneLoader.ImportMesh(
             undefined, 
             "", 
-            "92320022_cad.gltf", 
+            model+".gltf", 
             scene, 
             function (meshes) {
                 scene.createDefaultCameraOrLight(true);
@@ -136,7 +102,9 @@
 
         var point_positions;
         var point_lines;
-        var partmaterial
+        var partmaterial;
+        var checkboxpanel;
+        // Add checkboxes here
         setTimeout(function() {
             // After model did load (1000ms timeout safe)
 
@@ -151,8 +119,8 @@
             // set part material
             partmaterial = new BABYLON.StandardMaterial('frontMaterial', scene);
             partmaterial.diffuseColor = new BABYLON.Color3(1, 1, 1);
-            partmaterial.roughness = .3;
-            partmaterial.metalic = .9;
+            partmaterial.roughness = .5;
+            partmaterial.metalic = 1;
             partmaterial.alpha = 1;
 
             mymeshes.forEach(mesh => {
@@ -160,21 +128,62 @@
                     mesh.material = partmaterial;
                 }
             })
+            //checkbox panel
+            checkboxpanel = new BABYLON.GUI.StackPanel();
+            checkboxpanel.left = "500px";//(1-gui_width)-.05;
+            checkboxpanel.width = "300px";
+            checkboxpanel.isVertical = true;
+            // checkboxpanel.paddingLeft = "20px";
+            checkboxpanel.horizontalAlignment = BABYLON.GUI.Control.HORIZONTAL_ALIGNMENT_LEFT;
+            checkboxpanel.verticalAlignment = BABYLON.GUI.Control.VERTICAL_ALIGNMENT_CENTER;
+            checkboxpanel.fontSize = 16;
+            checkboxpanel.isVisible = false;
+            advancedTexture.addControl(checkboxpanel);
+
+            var addCheckbox = function(text, node, property, val1, val2 ,left, checkboxpanel) {
+                var checkbox = new BABYLON.GUI.Checkbox();
+                checkbox.name = text;
+                checkbox.width = "20px";
+                checkbox.height = "20px";
+                checkbox.color = "green";
+                checkbox.isChecked = false;
+                node[property] = val2; //false set at start
+
+                checkbox.onIsCheckedChangedObservable.add(function(value) {
+                    if (value){
+                        node[property] = val1;
+                    }else{
+                        node[property] = val2;
+                    }
+                });
+
+                var header = BABYLON.GUI.Control.AddHeader(checkbox, text, "180px", { isHorizontal: true, controlFirst: true});
+                header.height = "30px";
+                header.horizontalAlignment = BABYLON.GUI.Control.HORIZONTAL_ALIGNMENT_LEFT;
+
+                if (left) {
+                    header.left = left;
+                }
+
+                checkboxpanel.addControl(header); 
+                
+                return checkbox
+            }
 
             // checkbox presets
             var hidden = unitVec.scale(0)
             var visible = unitVec.scale(1)
 
-            part_cb = addCheckbox(part.id, part, "scaling", visible, hidden, "40px", panel);
+            part_cb = addCheckbox(part.id, part, "scaling", visible, hidden, "40px", checkboxpanel);
             part_cb.isChecked = true;
-            axes_cb = addCheckbox(axes.id, axes, "scaling", visible, hidden, "40px", panel);
+            axes_cb = addCheckbox(axes.id, axes, "scaling", visible, hidden, "40px", checkboxpanel);
             axes_cb.isChecked = true;
             
             // Measurement points
             point_positions = new Array(tols.length)
             point_lines = new Array(tols.length)
             tols.forEach((tol,tol_id) => {
-                addCheckbox(tol.name, tol, "scaling", visible, hidden, "40px", panel);
+                addCheckbox(tol.name, tol, "scaling", visible, hidden, "40px", checkboxpanel);
                 
                 elems = tol.getChildren()
                 point_positions[tol_id] = new Array(elems.length)
@@ -208,92 +217,273 @@
                     });
                 });
             });
-            // Rotation
-
         }, 1000); // Max timeout for model loading for node tree fetch
 
-        var slider = new BABYLON.GUI.Slider();
-        slider.minimum = .5;
-        slider.maximum = 2;
-        slider.value = 1;
-        slider.height = "20px";
-        slider.width = "150px";
-        slider.color = "#003399";
-        slider.background = "grey";
-        slider.left = "200px";
-        slider.top = "20px";
-        slider.horizontalAlignment = BABYLON.GUI.Control.HORIZONTAL_ALIGNMENT_LEFT;
-        slider.verticalAlignment = BABYLON.GUI.Control.VERTICAL_ALIGNMENT_TOP;
-        slider.onValueChangedObservable.add(function (value) {
-            tols.forEach(tol => {
-                elems = tol.getChildren()
-                elems.forEach(elem => {
-                    points = elem.getChildren()
-                    points.forEach(point => {
-                        point.scaling = unitVec.scale(value);
+        // Initialize and fill measurement data
+        var tol_data = []
+        setTimeout(function() {
+            var decimal_places = 4;
+            const filePath = model+".csv";
+
+            for(var i=0 ; i<10 ; i++){
+                tol_data.push(new Array(10));
+                tol_data[i].push(new Array(8))
+                for (var ii=0 ; ii<8 ; ii++){
+                    tol_data[i][ii] = 0;
+                }
+            };
+            
+            // var loadDsv = d3.dsv(",", "iso-8859-1");
+
+            function data(pathToCsv){
+                d3.csv(pathToCsv)
+                .row(function (d){
+                    return [
+                        d.type,
+                        d.element.replace('�',"<UNDEF>").replace('Ø',"<UNDEF>").replace('°',"<UNDEF>"),
+                        parseFloat(d.nominaal).toFixed(decimal_places),
+                        parseFloat(d.upptol).toFixed(decimal_places),
+                        parseFloat(d.lowtol).toFixed(decimal_places),
+                        parseFloat(d.gemeten).toFixed(decimal_places),
+                        parseFloat(d.afwijking).toFixed(decimal_places),
+                        parseInt(d.eval),
+                ];
+                    // return {
+                    //     type: d.type,
+                    //     element : d.element,
+                    //     nominaal : parseFloat(d.nominaal),
+                    //     upptol : parseFloat(d.upptol),
+                    //     lowtol : parseFloat(d.lowtol),
+                    //     gemeten : parseFloat(d.gemeten),
+                    //     afwijking : parseFloat(d.afwijking),
+                    // };
+                })
+                .get(function(data) {
+                    console.log('Added: '+data)
+                    data.forEach((element,element_id) => {
+                        tol_data[element_id] = element;
+                    });
+                });
+                console.log(tol_data);
+            };
+            data(filePath)
+            console.log(tol_data)
+        }, 1500)
+
+        // Add measurement data table here
+        var unitVec = new BABYLON.Vector3(1, 1, 1);
+        var scrollViewer;
+        setTimeout( function() {
+            //measurement table scrollviewer
+            scrollViewer = new BABYLON.GUI.ScrollViewer();
+            scrollViewer.x = (1-gui_width);
+            scrollViewer.background= "grey";
+            scrollViewer.width = gui_width;
+            scrollViewer.height = "100%";
+            scrollViewer.horizontalAlignment = BABYLON.GUI.Control.HORIZONTAL_ALIGNMENT_RIGHT;
+            scrollViewer.thickness = 0;
+            advancedTexture.addControl(scrollViewer);
+
+            //measurement table stackedPanel
+            var row_height = 40;
+            var col_width = 80;
+            stackedPanel = new BABYLON.GUI.StackPanel();
+            stackedPanel.height = tol_data.length*row_height+"px";
+            stackedPanel.isVertical = true;
+
+            //add buttons to the stackedPanel
+            for (var i = 0; i < tol_data.length; i++) {
+                var button = BABYLON.GUI.Button.CreateSimpleButton("button" + i, "");
+                button.width = 1;
+                button.height = row_height+"px";
+                button.color = "black";
+                button.horizontalAlignment = BABYLON.GUI.Control.HORIZONTAL_ALIGNMENT_RIGHT;
+                button.background = "white";
+                button.onPointerClickObservable.add(function (position, event) {
+                    console.log("Button clicked: " + event.target.name );
+                });
+                
+                button.onPointerEnterObservable.add(function(){
+                    console.log("in");
+                    camera.detachControl();
+                });
+                button.onPointerOutObservable.add(function(){
+                    console.log("out");
+                    camera.attachControl();
+                });
+
+                var row = new BABYLON.GUI.StackPanel();
+                row.isVertical = false; 
+                row.width = 1;
+                // row.height = "400px"; 
+                
+                for (var ii = 0; ii < 6; ii++) {
+                    if (ii == 3){
+                        tol_upper_lower_panel = new BABYLON.GUI.StackPanel();
+                        tol_upper_lower_panel.isVertical = true;
+                        tol_upper_lower_panel.top = row_height/5+"px";
+                        tol_upper_lower_panel.height = row_height+"px";
+                        tol_upper_lower_panel.width = col_width+"px";
+                        // tol_upper_lower_panel.verticalAlignment = BABYLON.GUI.Control.VERTICAL_ALIGNMENT_BOTTOM;
+                        
+                        low = new BABYLON.GUI.TextBlock();
+                        low.name = "textblock"+i+"_"+ii;
+                        low.text = tol_data[i][3];
+                        low.height = row_height/3+"px";
+                        low.color = "black";
+                        low.fontSize = 14;
+                        // low.verticalAlignment = BABYLON.GUI.Control.VERTICAL_ALIGNMENT_TOP;
+                        
+                        upp = new BABYLON.GUI.TextBlock();
+                        upp.name = "textblock"+i+"_"+ii;
+                        upp.text = tol_data[i][4];
+                        upp.height =  row_height/3+"px";
+                        upp.color = "black";
+                        upp.fontSize = 14;
+                        // upp.verticalAlignment = BABYLON.GUI.Control.VERTICAL_ALIGNMENT_BOTTOM;
+                        
+                        tol_upper_lower_panel.addControl(upp);
+                        tol_upper_lower_panel.addControl(low);
+
+                        row.addControl(tol_upper_lower_panel);
+                    }
+                    if (ii == 4){
+                        continue
+                    }
+                    col = new BABYLON.GUI.TextBlock();
+                    col.name = "textblock"+i+"_"+ii;
+                    col.text = tol_data[i][ii];
+                    col.width = col_width+"px";
+                    col.color = "black";
+                    col.fontSize = 14;
+
+                    if (ii==1){ //name column
+                        col.width = col_width*2+"px";
+                    }
+
+                    row.addControl(col);
+                }
+                button.addControl(row);
+
+                // button.onPointerClickObservable(function (){
+                //     panel.getDescendants
+                // })
+
+                stackedPanel.addControl(button);
+            }
+
+            scrollViewer.onPointerEnterObservable.add(function(){
+                console.log("in");
+                camera.detachControl();
+            });
+            scrollViewer.onPointerOutObservable.add(function(){
+                console.log("out");        
+                camera.attachControl();
+            });
+
+            scrollViewer.addControl(stackedPanel);
+            scrollViewer.thumbLength = 0.25;
+            scrollViewer.thumbHeight = 0.7;
+            scrollViewer.barImageHeight = 1;
+            scrollViewer.barSize = 20;
+            scrollViewer.scrollBackground = "black";
+            scrollViewer.barBackground = "black";
+        }, 2500);
+
+        // Add sliders here
+        setTimeout(function() {
+            var slider = new BABYLON.GUI.Slider();
+            slider.minimum = .5;
+            slider.maximum = 2;
+            slider.value = 1;
+            slider.height = "20px";
+            slider.width = "150px";
+            slider.color = "#003399";
+            slider.background = "grey";
+            slider.left = "200px";
+            slider.top = "20px";
+            slider.horizontalAlignment = BABYLON.GUI.Control.HORIZONTAL_ALIGNMENT_LEFT;
+            slider.verticalAlignment = BABYLON.GUI.Control.VERTICAL_ALIGNMENT_TOP;
+            slider.onValueChangedObservable.add(function (value) {
+                tols.forEach(tol => {
+                    elems = tol.getChildren()
+                    elems.forEach(elem => {
+                        points = elem.getChildren()
+                        points.forEach(point => {
+                            point.scaling = unitVec.scale(value);
+                        });
                     });
                 });
             });
-        });
-        advancedTexture.addControl(slider);
-        
-        var slider_deviation = new BABYLON.GUI.Slider();
-        slider_deviation.minimum = 0;
-        slider_deviation.maximum = 10;
-        slider_deviation.value = 0;
-        slider_deviation.height = "20px";
-        slider_deviation.width = "150px";
-        slider_deviation.color = "#003399";
-        slider_deviation.background = "grey";
-        slider_deviation.left = "200px";
-        slider_deviation.top = "50px";
-        slider_deviation.horizontalAlignment = BABYLON.GUI.Control.HORIZONTAL_ALIGNMENT_LEFT;
-        slider_deviation.verticalAlignment = BABYLON.GUI.Control.VERTICAL_ALIGNMENT_TOP;
-        slider_deviation.onValueChangedObservable.add(function (value) {
-            tols.forEach((tol,tol_id) => {
-                elems = tol.getChildren()
-                elems.forEach((elem,elem_id) => {
-                    points = elem.getChildren()
-                    points.forEach((point,index) => {
-                        new_position = new BABYLON.Vector3(
-                            point_positions[tol_id][elem_id][index].x,
-                            point_positions[tol_id][elem_id][index].y+value*point.metadata.gltf.extras['deviation'],
-                            point_positions[tol_id][elem_id][index].z
-                        )
-                        // point_lines[tol_id][elem_id][index].points[1] = new_position
-                        // line = BABYLON.MeshBuilder.CreateLines("lines", point_lines[tol_id][elem_id][index])
+            advancedTexture.addControl(slider);
+            
+            var slider_deviation = new BABYLON.GUI.Slider();
+            slider_deviation.minimum = 0;
+            slider_deviation.maximum = .01;
+            slider_deviation.value = 0;
+            slider_deviation.height = "20px";
+            slider_deviation.width = "150px";
+            slider_deviation.color = "#003399";
+            slider_deviation.background = "grey";
+            slider_deviation.left = "200px";
+            slider_deviation.top = "50px";
+            slider_deviation.horizontalAlignment = BABYLON.GUI.Control.HORIZONTAL_ALIGNMENT_LEFT;
+            slider_deviation.verticalAlignment = BABYLON.GUI.Control.VERTICAL_ALIGNMENT_TOP;
+            slider_deviation.onValueChangedObservable.add(function (value) {
+                tols.forEach((tol,tol_id) => {
+                    console.log('scaling: '+tol["scaling"]+(tol["scaling"].x))
+                    if (tol["scaling"].x == 1 && tol["scaling"].y == 1 && tol["scaling"].y == 1){
+                        elems = tol.getChildren()
+                        elems.forEach((elem,elem_id) => {
+                            points = elem.getChildren()
+                            points.forEach((point,index) => {
+                                console.log(point.metadata.gltf.extras['deviation'])
+                                deviation = point.metadata.gltf.extras['deviation'][0];
+                                dirs = point.metadata.gltf.extras['deviation'][1];
+                                console.log('deviation: '+deviation+'   dirs1:'+dirs)
+                                // let dirx,diry,dirz= dirs
+                                // console.log('deviation: '+deviation+'   dirs2:'+dirx+','+diry+','+dirz)
+                                new_position = new BABYLON.Vector3(
+                                    point_positions[tol_id][elem_id][index].x+dirs[0]*deviation*value,
+                                    point_positions[tol_id][elem_id][index].y+dirs[1]*deviation*value,
+                                    point_positions[tol_id][elem_id][index].z+dirs[2]*deviation*value
+                                )
+                                // point_lines[tol_id][elem_id][index].points[1] = new_position
+                                // line = BABYLON.MeshBuilder.CreateLines("lines", point_lines[tol_id][elem_id][index])
 
-                        point.position = new_position
-                    });
+                                point.position = new_position
+                            });
+                        });
+                    }
                 });
             });
-        });
 
-        advancedTexture.addControl(slider_deviation);
+            advancedTexture.addControl(slider_deviation);
 
-        var slider_transparency = new BABYLON.GUI.Slider();
-        slider_transparency.minimum = .1;
-        slider_transparency.maximum = 1;
-        slider_transparency.value = 1;
-        slider_transparency.height = "20px";
-        slider_transparency.width = "150px";
-        slider_transparency.color = "#003399";
-        slider_transparency.background = "grey";
-        slider_transparency.left = "200px";
-        slider_transparency.top = "80px";
-        slider_transparency.horizontalAlignment = BABYLON.GUI.Control.HORIZONTAL_ALIGNMENT_LEFT;
-        slider_transparency.verticalAlignment = BABYLON.GUI.Control.VERTICAL_ALIGNMENT_TOP;
-        slider_transparency.onValueChangedObservable.add(function (value) {
-            partmaterial.alpha = value;
+            var slider_transparency = new BABYLON.GUI.Slider();
+            slider_transparency.minimum = .1;
+            slider_transparency.maximum = 1;
+            slider_transparency.value = 1;
+            slider_transparency.height = "20px";
+            slider_transparency.width = "150px";
+            slider_transparency.color = "#003399";
+            slider_transparency.background = "grey";
+            slider_transparency.left = "200px";
+            slider_transparency.top = "80px";
+            slider_transparency.horizontalAlignment = BABYLON.GUI.Control.HORIZONTAL_ALIGNMENT_LEFT;
+            slider_transparency.verticalAlignment = BABYLON.GUI.Control.VERTICAL_ALIGNMENT_TOP;
+            slider_transparency.onValueChangedObservable.add(function (value) {
+                partmaterial.alpha = value;
 
-            // mymeshes.forEach(mesh => {
-            //     if (mesh.name.startsWith(part.id) && (mesh.material)){
-            //         mesh.material = partmaterial;
-            //     }
-            // })
-        });
+                // mymeshes.forEach(mesh => {
+                //     if (mesh.name.startsWith(part.id) && (mesh.material)){
+                //         mesh.material = partmaterial;
+                //     }
+                // })
+            });
 
-        advancedTexture.addControl(slider_transparency);
+            advancedTexture.addControl(slider_transparency);
+        }, 2501);
 
         // Start rendering the scene based on the engine render loop.
         engine.runRenderLoop(function () {
@@ -301,6 +491,110 @@
                 scene.render();
             }
         });
+
+        // Add measurement data to table
+        setTimeout(function(){
+            var hidden = unitVec.scale(0)
+            var visible = unitVec.scale(1)
+            // console.log(tol_data);
+            var i = 0;
+            stackedPanel.getDescendants().forEach(button => {
+                if (button.name){
+                    if (button.name.startsWith('button')){
+                        var ii = 0;
+                        button.getDescendants().forEach(textblock => {
+                            if (textblock.name){
+                                if (textblock.name.startsWith("textblock")) {
+                                    var eval = tol_data[i][7]
+                                    var textcolor = "black";
+
+                                    console.log(i+'_'+ii+'_'+eval)
+                                    if (eval == 0){
+                                        textcolor = "black";
+                                    }else if (eval == 1){
+                                        textcolor = "blue";
+                                    }else if (eval == 2){
+                                        textcolor = "red";
+                                    }
+
+                                    textblock.color = textcolor;
+
+                                    switch(ii){
+                                        case 0:
+                                            textblock.text = tol_data[i][ii].split("_")[1];
+                                            textblock.fontSize = 14;
+                                            break;
+                                        case 1:
+                                            textblock.text = tol_data[i][ii].split("-")[1];
+                                            textblock.fontSize = 14;
+                                            break;
+                                        case 3:
+                                            textblock.text = tol_data[i][ii];
+                                            break;
+                                        case 4:
+                                            textblock.text = tol_data[i][ii];
+                                            break;
+                                        default:
+                                            textblock.text = tol_data[i][ii];
+                                    }
+                                    ii += 1;
+                                }
+                            }
+                        })
+                        if (ii != 0){
+                            var looking_id = i;
+                            button.onPointerClickObservable.add(function(){
+                                // find the corresponding checkbox by element name e.g.: "Flt-Vlak A1"
+                                // console.log('looking for '+tol_data[looking_id][1])
+                                // var cb = checkboxpanel.getDescendants().find(cb => cb.name === tol_data[looking_id][1]);
+                                // cb.isChecked = !cb.isChecked;
+                                node = tols.find(tol => tol.id == tol_data[looking_id][1]);
+                                console.log("node:"+tol_data[looking_id][1])
+                                console.log(node)
+                                if (button.background == "green"){ //if on turn off
+                                    button.color = "black"
+                                    button.background = "white"
+                                    node["scaling"] = unitVec.scale(0);
+                                }else{ //if off turn on
+                                    button.color = "red"
+                                    button.background = "green"
+                                    node["scaling"] = unitVec.scale(1);
+                                    targets = 0
+                                    target_position = new BABYLON.Vector3(0,0,0);
+                                    console.log('initial position: '+ target_position)
+                                    node.getChildren().forEach(element => {
+                                        element.getChildren().forEach(point => {
+                                            console.log('add to position: '+ new BABYLON.Vector3(
+                                                point.position.x,
+                                                point.position.y,
+                                                point.position.z
+                                            ))
+                                            target_position = new BABYLON.Vector3(
+                                                target_position.x + point.position.x,
+                                                target_position.y + point.position.y,
+                                                target_position.z + point.position.z
+                                                )
+                                            targets += 1
+                                        })
+                                    })
+                                    target_position = new BABYLON.Vector3(
+                                        -target_position.x/targets,
+                                        target_position.y/targets,
+                                        target_position.z/targets
+                                        );
+                                    
+                                    console.log('node points: '+ targets)
+                                    console.log('node position: '+ target_position)
+                                    // camera.getProjectionMatrix().multiplyToRef(camera_matrix, camera.getProjectionMatrix());
+                                    camera.setTarget(target_position)
+                                }
+                            })
+                            i += 1;
+                        }
+                    }
+                }
+            })
+        }, 3000);
 
         // Resize
         window.addEventListener("resize", function () {

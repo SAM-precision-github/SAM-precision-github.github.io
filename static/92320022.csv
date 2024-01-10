@@ -1,0 +1,17 @@
+type,element,nominaal,upptol,lowtol,gemeten,afwijking,eval
+Tol_Flt,Flt-Vlak A ,0.0,0.01,0.0,0.0,0.0,0
+Tol_Flt,Flt-Vlak A1,0.0,0.01,0.0,0.0,0.0,0
+Tol_Flt,Flt-Vlak A2,0.0,0.01,0.0,0.0,0.0,0
+Tol_Flt,Flt-Vlak A3,0.0,0.01,0.0,0.0,0.0,0
+Tol_Flt,Flt-Vlak A4,0.0,0.01,0.0,0.0,0.0,0
+Tol_Flt,Flt-Vlak A5,0.0,0.01,0.0,0.0,0.0,0
+Tol_PosZ,PosZ-Vlak A1,0.0,0.01,-0.01,0.0,0.0,0
+Tol_PosZ,PosZ-Vlak A2,0.0,0.01,-0.01,0.0,0.0,0
+Tol_PosZ,PosZ-Vlak A3,0.0,0.01,-0.01,0.0,0.0,0
+Tol_PosZ,PosZ-Vlak A4,0.0,0.01,-0.01,0.0,0.0,0
+Tol_PosZ,PosZ-Vlak A5,0.0,0.01,-0.01,0.0,0.0,0
+Tol_PosZ,PosZ-pos 43_1,0.1,0.2,0.0,0.1,0.0,1
+Tol_PosZ,PosZ-pos 43_2,0.1,0.2,0.0,0.1,0.0,1
+Tol_PosZ,PosZ-pos 43_3,0.1,0.2,0.0,0.1,0.0,1
+Tol_PosZ,PosZ-pos 43_4,0.1,0.2,0.0,0.1,0.0,1
+Tol_PosZ,PosZ-pos 43_5,0.1,0.2,0.0,0.1,0.0,1

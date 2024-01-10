@@ -11068,7 +11068,7 @@
   ],
   "buffers": [
     {
-      "uri": "92320022_cad.bin",
+      "uri": "92320022.bin",
       "byteLength": 336528
     }
   ],
@@ -15081,7 +15081,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15092,7 +15099,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15103,7 +15117,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15114,7 +15135,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15125,7 +15153,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15136,7 +15171,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15147,7 +15189,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15158,7 +15207,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15169,7 +15225,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15180,7 +15243,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15191,7 +15261,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15202,7 +15279,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15213,7 +15297,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15224,7 +15315,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15235,7 +15333,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15246,7 +15351,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15257,7 +15369,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15268,7 +15387,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15279,7 +15405,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15290,7 +15423,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15301,7 +15441,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15312,7 +15459,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15323,7 +15477,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15334,7 +15495,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15345,7 +15513,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15356,7 +15531,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15367,7 +15549,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15378,7 +15567,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15389,7 +15585,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15400,7 +15603,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15411,7 +15621,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15422,7 +15639,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15433,7 +15657,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15444,7 +15675,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15455,7 +15693,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15466,7 +15711,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15477,7 +15729,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15488,7 +15747,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15499,7 +15765,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15510,7 +15783,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15521,7 +15801,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15532,7 +15819,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15543,7 +15837,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15554,7 +15855,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15565,7 +15873,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15576,7 +15891,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15587,7 +15909,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15598,7 +15927,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15609,7 +15945,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15620,7 +15963,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15631,7 +15981,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15642,7 +15999,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15653,7 +16017,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15664,7 +16035,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15675,7 +16053,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15686,7 +16071,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15697,7 +16089,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15708,7 +16107,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15719,7 +16125,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15730,7 +16143,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15741,7 +16161,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15752,7 +16179,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15763,7 +16197,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15774,7 +16215,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15785,7 +16233,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15796,7 +16251,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15807,7 +16269,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15818,7 +16287,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15829,7 +16305,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15840,7 +16323,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15851,7 +16341,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15862,7 +16359,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15873,7 +16377,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15884,7 +16395,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15895,7 +16413,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15906,7 +16431,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15917,7 +16449,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15928,7 +16467,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15939,7 +16485,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15950,7 +16503,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15961,7 +16521,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15972,7 +16539,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15983,7 +16557,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -15994,7 +16575,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16005,7 +16593,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16016,7 +16611,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16027,7 +16629,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16038,7 +16647,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16049,7 +16665,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16060,7 +16683,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16071,7 +16701,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16082,7 +16719,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16093,7 +16737,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16104,7 +16755,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16115,7 +16773,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16126,7 +16791,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16137,7 +16809,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16148,7 +16827,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16159,7 +16845,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16170,7 +16863,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16181,7 +16881,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16192,7 +16899,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16203,7 +16917,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16214,7 +16935,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16225,7 +16953,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16236,7 +16971,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16247,7 +16989,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16258,7 +17007,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16269,7 +17025,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16280,7 +17043,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16291,7 +17061,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16302,7 +17079,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16313,7 +17097,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16324,7 +17115,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16335,7 +17133,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16346,7 +17151,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16357,7 +17169,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16368,7 +17187,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16379,7 +17205,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16390,7 +17223,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16538,7 +17378,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16549,7 +17396,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16560,7 +17414,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16571,7 +17432,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16582,7 +17450,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16593,7 +17468,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16604,7 +17486,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16615,7 +17504,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16626,7 +17522,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16637,7 +17540,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16648,7 +17558,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16659,7 +17576,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16670,7 +17594,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16681,7 +17612,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16692,7 +17630,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16703,7 +17648,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16714,7 +17666,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16725,7 +17684,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16736,7 +17702,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16747,7 +17720,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16758,7 +17738,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16769,7 +17756,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16780,7 +17774,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16791,7 +17792,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16843,7 +17851,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16854,7 +17869,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16865,7 +17887,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16876,7 +17905,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16887,7 +17923,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16898,7 +17941,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16909,7 +17959,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16920,7 +17977,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16931,7 +17995,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16942,7 +18013,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16953,7 +18031,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16964,7 +18049,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16975,7 +18067,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16986,7 +18085,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -16997,7 +18103,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17008,7 +18121,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17019,7 +18139,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17030,7 +18157,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17041,7 +18175,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17052,7 +18193,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17063,7 +18211,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17074,7 +18229,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17085,7 +18247,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17096,7 +18265,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17148,7 +18324,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17159,7 +18342,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17170,7 +18360,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17181,7 +18378,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17192,7 +18396,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17203,7 +18414,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17214,7 +18432,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17225,7 +18450,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17236,7 +18468,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17247,7 +18486,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17258,7 +18504,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17269,7 +18522,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17280,7 +18540,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17291,7 +18558,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17302,7 +18576,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17313,7 +18594,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17324,7 +18612,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17335,7 +18630,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17346,7 +18648,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17357,7 +18666,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17368,7 +18684,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17379,7 +18702,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17390,7 +18720,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17401,7 +18738,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17453,7 +18797,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17464,7 +18815,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17475,7 +18833,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17486,7 +18851,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17497,7 +18869,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17508,7 +18887,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17519,7 +18905,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17530,7 +18923,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17541,7 +18941,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17552,7 +18959,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17563,7 +18977,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17574,7 +18995,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17585,7 +19013,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17596,7 +19031,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17607,7 +19049,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17618,7 +19067,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17629,7 +19085,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17640,7 +19103,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17651,7 +19121,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17662,7 +19139,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17673,7 +19157,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17684,7 +19175,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17695,7 +19193,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17706,7 +19211,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17758,7 +19270,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17769,7 +19288,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17780,7 +19306,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17791,7 +19324,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17802,7 +19342,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17813,7 +19360,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17824,7 +19378,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17835,7 +19396,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17846,7 +19414,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17857,7 +19432,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17868,7 +19450,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17879,7 +19468,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17890,7 +19486,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17901,7 +19504,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17912,7 +19522,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17923,7 +19540,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17934,7 +19558,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17945,7 +19576,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17956,7 +19594,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17967,7 +19612,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17978,7 +19630,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -17989,7 +19648,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18000,7 +19666,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18011,7 +19684,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18063,7 +19743,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18074,7 +19761,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18085,7 +19779,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18096,7 +19797,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18107,7 +19815,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18118,7 +19833,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18129,7 +19851,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18140,7 +19869,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18151,7 +19887,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18162,7 +19905,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18173,7 +19923,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18184,7 +19941,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18195,7 +19959,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18206,7 +19977,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18217,7 +19995,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18228,7 +20013,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18239,7 +20031,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18250,7 +20049,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18261,7 +20067,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18272,7 +20085,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18283,7 +20103,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18294,7 +20121,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18305,7 +20139,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18316,7 +20157,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18368,7 +20216,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18379,7 +20234,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18390,7 +20252,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18401,7 +20270,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18412,7 +20288,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18423,7 +20306,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18434,7 +20324,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18445,7 +20342,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18456,7 +20360,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18467,7 +20378,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18478,7 +20396,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18489,7 +20414,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18500,7 +20432,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18511,7 +20450,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18522,7 +20468,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18533,7 +20486,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18544,7 +20504,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18555,7 +20522,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18566,7 +20540,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18577,7 +20558,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18588,7 +20576,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18599,7 +20594,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18610,7 +20612,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18621,7 +20630,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18673,7 +20689,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18684,7 +20707,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18695,7 +20725,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18706,7 +20743,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18717,7 +20761,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18728,7 +20779,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18739,7 +20797,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18750,7 +20815,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18761,7 +20833,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18772,7 +20851,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18783,7 +20869,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18794,7 +20887,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18805,7 +20905,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18816,7 +20923,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18827,7 +20941,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18838,7 +20959,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18849,7 +20977,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18860,7 +20995,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18871,7 +21013,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18882,7 +21031,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18893,7 +21049,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18904,7 +21067,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18915,7 +21085,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18926,7 +21103,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18978,7 +21162,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -18989,7 +21180,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -19000,7 +21198,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -19011,7 +21216,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -19022,7 +21234,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -19033,7 +21252,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -19044,7 +21270,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -19055,7 +21288,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -19066,7 +21306,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -19077,7 +21324,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -19088,7 +21342,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -19099,7 +21360,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -19110,7 +21378,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -19121,7 +21396,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -19132,7 +21414,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -19143,7 +21432,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -19154,7 +21450,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -19165,7 +21468,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -19176,7 +21486,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -19187,7 +21504,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -19198,7 +21522,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -19209,7 +21540,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -19220,7 +21558,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -19231,7 +21576,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -19283,7 +21635,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -19294,7 +21653,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -19305,7 +21671,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -19316,7 +21689,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -19327,7 +21707,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -19338,7 +21725,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -19349,7 +21743,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -19360,7 +21761,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -19371,7 +21779,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -19382,7 +21797,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -19393,7 +21815,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -19404,7 +21833,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -19415,7 +21851,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -19426,7 +21869,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -19437,7 +21887,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -19448,7 +21905,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -19459,7 +21923,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -19470,7 +21941,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -19481,7 +21959,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -19492,7 +21977,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -19503,7 +21995,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -19514,7 +22013,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -19525,7 +22031,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
@@ -19536,7 +22049,14 @@
     },
     {
       "extras": {
-        "deviation": 0.0
+        "deviation": [
+          0.0,
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ]
       },
       "mesh": 5,
       "translation": [
